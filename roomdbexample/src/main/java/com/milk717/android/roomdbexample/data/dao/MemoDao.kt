@@ -10,10 +10,10 @@ import com.milk717.android.roomdbexample.data.model.Memo
 @Dao
 interface MemoDao {
     @Query("select * from memo")    //괄호 안 SQL 문법
-    fun getAll(): List<Memo>
+    fun getAllMemo(): List<Memo>
 
     @Insert(onConflict = REPLACE)   //REPLACE 설정 시 동일한 키를 가진 값이 입력됐을 때 UPDATE 쿼리로 실행됨
-    fun insert(memo: Memo)
+    fun insertMemo(memo: Memo)
 
     @Delete
     fun deleteMemo(memo: Memo)

@@ -5,6 +5,9 @@
 
     <data>
         <import type="android.view.View"/>
+        <variable
+            name="viewModel"
+            type="com.milk717.android.roomdbexample.HomeViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -27,13 +30,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:ems="15"
+            android:text="@={viewModel.textInput}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="저장"
+            android:text="@{() -> viewModel.onRegisterButtonClick()}"
             app:layout_constraintBottom_toBottomOf="@+id/editText"
             app:layout_constraintStart_toEndOf="@id/editText"
             app:layout_constraintTop_toTopOf="@+id/editText" />
