@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/SingleLiveEventPrototype" />
             <option value="$PROJECT_DIR$/retrofitprototype" />
             <option value="$PROJECT_DIR$/roomdbexample" />
+            <option value="$PROJECT_DIR$/temproomdbexample" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

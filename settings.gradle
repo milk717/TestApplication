@@ -16,3 +16,4 @@ rootProject.name = "TestApplication"
 include ':SingleLiveEventPrototype'
 include ':retrofitprototype'
 include ':roomdbexample'
+include ':temproomdbexample'
