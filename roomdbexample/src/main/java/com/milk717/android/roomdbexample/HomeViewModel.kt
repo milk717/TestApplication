@@ -18,9 +18,6 @@ class HomeViewModel : BaseViewModel(), KoinComponent {
     val textInput = MutableLiveData("")
 
     fun onRegisterButtonClick(){
-        CoroutineScope(Dispatchers.IO).launch {
-
-        }
         viewEvent(EVENT_REGISTER_MEMO)
     }
 }
