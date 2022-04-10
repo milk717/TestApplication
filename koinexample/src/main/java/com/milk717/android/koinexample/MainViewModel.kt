@@ -17,7 +17,7 @@ class MainViewModel : BaseViewModel(), KoinComponent {
 
     fun onTextBtnClick(){
         textRes.value = text.value
-        Toast.makeText(context.applicationContext,"클릭",Toast.LENGTH_SHORT).show()
+        Toast.makeText(context,"클릭",Toast.LENGTH_SHORT).show()
         viewEvent(EVENT_START)
     }
 }
